@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter } from "react-router-dom";
+import {Provider} from 'react-redux';
+import store from './redux/store';
+import SimpleReactLightbox from 'simple-react-lightbox';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Provider store={store}>
+    <SimpleReactLightbox>
+      <App />
+    </SimpleReactLightbox>
+    </Provider>
+
+  </BrowserRouter>
   </React.StrictMode>
 );
 

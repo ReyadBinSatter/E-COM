@@ -1,0 +1,147 @@
+.footer-bg {
+    background-color: rgb(243, 243, 236);
+}
+.c-bg{
+    background-color: rgb(243, 243, 236);
+  }
+  .form-check-input:checked{
+    background-color: #000000;
+    border-color: #000000;
+  }
+.img-s{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.c-img-s{
+    height: 600px;
+    width: 600px;
+}
+
+.color-box{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border: #000000 solid 2px;
+}
+.ft-input:hover,
+.ft-input:active,
+.ft-input:focus {
+    border: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    background: none;
+}
+.home.active, .home:active,
+.dd.active, .dd:active,
+.about.active, .about:active,
+.contact.active, .contact:active{
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dd-menu, .home, .contact, .about{
+    --bs-dropdown-link-active-bg: none;
+}
+
+.card-s {
+    width: 19%;
+}
+
+.side-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+
+
+.side-bar{
+    width: 75px;
+    height: 100vh;
+    background: rgb(243, 243, 236);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto 0;
+    padding: 0;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+    display: flex;
+}
+
+.tabs {
+
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+}
+
+.tabs:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+    
+    border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+}
+
+
+
+.bloc-tabs button {
+    border: none;
+
+}
+
+.content-tabs {
+    flex-grow: 1;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+
+.active-content {
+    display: block;
+}
